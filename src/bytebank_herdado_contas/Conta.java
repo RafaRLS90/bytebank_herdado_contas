@@ -13,8 +13,8 @@ public class Conta {
 		
 		this.agencia = agencia;
 		this.numero = numero;
-		this.saldo = 100;
-		System.out.println("estou criando uma conta" + this.numero);
+		//this.saldo = 100;
+		//System.out.println("estou criando uma conta" + this.numero);
 	}
 	
 	public void depositar(double valor) {
