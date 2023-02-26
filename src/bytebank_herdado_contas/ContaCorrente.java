@@ -5,6 +5,12 @@ public class ContaCorrente extends Conta {
         super(agencia , numero);
     }
     
+   @Override
+public void depositar(double valor) {
+	super.saldo += valor;
+	
+}
+    
     @Override
     public boolean sacar(double valor) {
     	// TODO Auto-generated method stub
