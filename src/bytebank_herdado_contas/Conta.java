@@ -11,6 +11,14 @@ public abstract class Conta {
 		Conta.total++;
 		//System.out.println("o total de contas é " + Conta.total);
 		
+		 if(agencia < 1) {
+	            throw new IllegalArgumentException("Agencia inválida");
+	        }
+		 //Não ter números negativos para registro de agência.
+	        if(numero < 1) {
+	            throw new IllegalArgumentException("Numero da conta inválido");
+	        }
+	      //Não ter números negativos para registro de numero.
 		this.agencia = agencia;
 		this.numero = numero;
 		//this.saldo = 100;
