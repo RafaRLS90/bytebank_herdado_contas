@@ -12,7 +12,7 @@ public void depositar(double valor) {
 }
     
     @Override
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SaldoInsuficienteException{
     	// TODO Auto-generated method stub
     	double valorASacar = valor + 0.2;
     	super.sacar(valorASacar);
