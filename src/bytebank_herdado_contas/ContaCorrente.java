@@ -12,10 +12,10 @@ public void depositar(double valor) {
 }
     
     @Override
-    public boolean sacar(double valor) {
+    public void sacar(double valor) {
     	// TODO Auto-generated method stub
     	double valorASacar = valor + 0.2;
-    	return super.sacar(valorASacar);
+    	super.sacar(valorASacar);
     }
 
 	@Override
